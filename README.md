@@ -1,9 +1,19 @@
- Descrição do Projeto
-Este projeto implementa um pipeline completo de ETL (Extract, Transform, Load) na AWS, utilizando serviços gerenciados para processamento e análise de dados. A arquitetura foi desenvolvida com foco em escalabilidade, automação e boas práticas de engenharia de dados.
+![Arquitetura do Pipeline](images/ETL.drawio.png)
+
+
+
+📄 Descrição do Projeto
+
+Este projeto implementa um pipeline completo de ETL (Extract, Transform, Load) na AWS, utilizando serviços gerenciados para processamento e análise de dados.
+
+O objetivo é transformar dados históricos de um varejista de modelos em escala de carros clássicos para que analistas possam extrair insights rapidamente, sem sobrecarregar o banco de dados de produção.
+
+O pipeline garante escalabilidade, automação e boas práticas de engenharia de dados.
+
 🏗️ Arquitetura
 Amazon RDS → AWS Glue ETL → S3 Bucket → AWS Athena → User
-                              ↓
-                         Glue Crawler
+                   ↓
+              Glue Crawler
 Componentes:
 
 Amazon RDS: Database relacional como fonte de dados estruturados e normalizados
